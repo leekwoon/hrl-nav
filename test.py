@@ -133,27 +133,46 @@ from nav_gym_env.ros_env import RosEnv
 from hrl_nav.scenario_wrapper import ScenarioWrapper
 
 env = gym.make('NavGymHierarchical-v0')
-env = ScenarioWrapper(
-    env,
-    map_yaml_file=os.path.join(hrl_nav.MAP_DIR, 'atc.yaml'),
-    resolution_factor=1.2,# high resolution factor -> wide width
-    distance_threshold=1.0,
-    start_xy=[116.4, 24],
-    start_theta=np.pi,
-    goal_xy=[71, 52.4],
-    use_subgoal_from_global_planner=False,
-    subgoal_dist=6,
-    scenarios=[
-        [[84, 40.8], [124.3, 20.6]],
-        [[91.6, 34.3], [132.1, 18]],
-        [[89.5, 36.2], [113, 25.2]],
-        [[79.8, 47.6], [127.2, 23.1]],
-        [[100, 29], [127.5, 22]],
-        [[89, 39.3], [120.5, 20.4]],
-        [[110.2, 25], [69, 54.3]],
-        [[102.4, 26.5], [59.6, 55.1]],
-    ]
-)
+# env = ScenarioWrapper(
+#     env,
+#     map_yaml_file=os.path.join(hrl_nav.MAP_DIR, 'atc.yaml'),
+#     resolution_factor=1.2,# high resolution factor -> wide width
+#     distance_threshold=1.0,
+#     start_xy=[116.4, 24],
+#     start_theta=np.pi,
+#     goal_xy=[71, 52.4],
+#     use_subgoal_from_global_planner=False,
+#     subgoal_dist=6,
+#     scenarios=[
+#         [[84, 40.8], [124.3, 20.6]],
+#         [[91.6, 34.3], [132.1, 18]],
+#         [[89.5, 36.2], [113, 25.2]],
+#         [[79.8, 47.6], [127.2, 23.1]],
+#         [[100, 29], [127.5, 22]],
+#         [[89, 39.3], [120.5, 20.4]],
+#         [[110.2, 25], [69, 54.3]],
+#         [[102.4, 26.5], [59.6, 55.1]],
+#     ]
+# )
+
+# env = ScenarioWrapper(
+#     env,
+#     map_yaml_file=os.path.join(hrl_nav.MAP_DIR, 'keti4floor.yaml'),
+#     resolution_factor=1.5,# high resolution factor -> wide width
+#     distance_threshold=1.0,
+#     start_xy=[10, 23.4],
+#     start_theta=0.,
+#     goal_xy=[16.2, 40],
+#     use_subgoal_from_global_planner=False, # True,
+#     subgoal_dist=6,
+#     scenarios=[
+#         [[30, 19], [10, 23.4]], # human1 start, goal
+#         [[28, 19], [16.2, 40]],
+#         [[16.2, 40], [10, 23.4]],
+#         [[34, 35.5], [20.7, 20.5]]
+#     ]
+# )
+
 env = NormalizedBoxEnv(env)
 env = RosEnv(env)
 env._wrapped_env.set_low_level_agent(low_level_agent)

@@ -64,6 +64,7 @@ if __name__ == '__main__':
     variant['seed'] = args.seed
     variant['snapshot_mode'] = args.snapshot_mode
     variant['snapshot_gap'] = args.snapshot_gap
+    variant['low_level_agent_params'] = args.low_level_agent_params
     variant['log_time'] = time.strftime('%Y_%m_%d_%H_%M_%S')
     
     if variant['seed'] is None:
