@@ -30,7 +30,7 @@ if __name__ == '__main__':
         env_id='NavGymRewardRandomize-v0',
         replay_buffer_kwargs=dict(
             max_size=int(5E6), 
-            fraction_goals_rollout_goals=1.0,
+            fraction_goals_rollout_goals=1.0, # without HER
             fraction_goals_env_goals=0,
         ),
         sac_trainer_kwargs=dict(
@@ -92,7 +92,7 @@ if __name__ == '__main__':
     obs_dim = scan_dim + 2 + 2 # (scan_dim + goal_dim + vel_dim)
     action_dim = expl_env.action_space.low.size
 
-    obs_normalizer = obs_normalizer = LowLevelNormalizer(
+    obs_normalizer = LowLevelNormalizer(
         num_scan_stack=1,
         range_max=6.0,
         n_angles=expl_env._wrapped_env._wrapped_env.robot.n_angles,
