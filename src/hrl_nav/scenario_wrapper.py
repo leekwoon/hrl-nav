@@ -68,13 +68,6 @@ class ScenarioWrapper(object):
         self.map2d = CMap2D(map_folder, map_name)
         map_data = self.map2d.occupancy().T
         map_data[map_data > 0] = 100
-        # map_data[map_data != 1] = 0
-        # map_data[map_data == 1] = 100
-        # kernel = np.ones((3, 3)) # 인접한 주변 상하좌우 0.25 * 3 = 0.75cm 씩
-        # map_data = cv2.filter2D(
-        #     map_data.astype(np.uint8), -1, kernel
-        # ).astype(np.uint8)
-        # map_data[map_data > 0] = 100
         self.map_data = map_data.astype('int8')
 
         self.debug = np.array([0, 0, 0, 0, 0])
