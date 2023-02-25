@@ -35,15 +35,15 @@ if __name__ == '__main__':
         ),
         sac_trainer_kwargs=dict(
             discount=0.99,
-            policy_lr=0.0001,
-            qf_lr=0.0001,
-            soft_target_tau=0.0005,
+            policy_lr=1e-4,
+            qf_lr=1e-4,
+            soft_target_tau=5e-4,
             target_update_period=1,
             use_automatic_entropy_tuning=True,
         ), 
         algo_kwargs=dict(
             batch_size=256,
-            num_epochs=1000,
+            num_epochs=121, # 1000
             num_eval_steps_per_epoch=0,
             num_expl_steps_per_train_loop=5000,
             num_trains_per_train_loop=1000,
