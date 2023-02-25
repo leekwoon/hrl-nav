@@ -53,7 +53,7 @@ if __name__ == '__main__':
     )
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('base_logdir', default='/tmp', type=str, help='base subdirectory of log_dir')
+    parser.add_argument('--base_logdir', default='/tmp', type=str, help='base subdirectory of log_dir')
     parser.add_argument('--seed', default=None, type=int)
     parser.add_argument('--snapshot_mode', default='gap_and_last', type=str, choices=['none', 'gap', 'last', 'gap_and_last'])
     parser.add_argument('--snapshot_gap', default=20, type=int)
