@@ -69,7 +69,7 @@ if __name__ == '__main__':
         variant['seed'] = random.randint(0, 100000)
     set_seed(variant['seed'])
 
-    logdir = '{}/hrl_nav_logs/{}/hrl/{}/seed_{}/high_level'
+    logdir = '{}/hrl_nav_logs/{}/hrl/{}/seed_{}/low_level'
     logdir = logdir.format(variant['base_logdir'], variant['env_id'], variant['log_time'], variant['seed'])
 
     setup_logger(
