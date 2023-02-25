@@ -55,6 +55,8 @@ Kyowoon Lee\*<sup>1</sup>(leekwoon@unist.ac.kr), Seongun Kim\*<sup>2</sup>(seong
 
 <sup>2</sup>[KAIST](http://kaist.ac.kr/kr/) @ Graduate School of Artificial Intelligence, KAIST, Daejeon, Republic of Korea. 
 
+\* Equal contribution
+
 ## Reference
 
 ```
