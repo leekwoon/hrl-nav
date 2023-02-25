@@ -1,0 +1,7 @@
+image: asl_office_j.pgm
+resolution: 0.020000
+origin: [-32.160000, -11.520000, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.15 #0.196
+

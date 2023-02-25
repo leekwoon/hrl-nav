@@ -1,0 +1,7 @@
+image: floor_3_0607.pgm
+resolution: 0.050000
+origin: [-9.550000, -69.400000, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+
