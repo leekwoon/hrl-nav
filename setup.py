@@ -5,7 +5,7 @@ setup(
     name='hrl_nav',
     description='',
     version='1.0',
-    license='MIT',
+    # license='MIT',
     author='Kyowoon Lee, Seongun Kim',
     author_email='leekwoon@unist.ac.kr, seongun@kaist.ac.kr',
     packages=['rlkit', 'hrl_nav'],

@@ -81,3 +81,5 @@ register(
     },
     entry_point='hrl_nav.hierarchical_env:NavGymHierarchicalEnv'
 )
+
+
