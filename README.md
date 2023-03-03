@@ -44,7 +44,7 @@ python -m examples.train_high_level --base_logdir /tmp --seed 0 --low_level_agen
 ## Testing
 
 ```bash
-python -m examples.test --scenario atc --low_level_agent_params /tmp/...LOW_LEVEL_PATH.../itr_120.pkl --high_level_agent_params /tmp/...HIGH_LEVEL_PATH.../itr_80.pkl
+python -m examples.test --scenario atc --low_level_agent_params /tmp/...LOW_LEVEL_PATH.../itr_120.pkl --high_level_agent_params /tmp/...HIGH_LEVEL_PATH.../itr_80.pkl --spec atc
 ```
 
 ## Authors

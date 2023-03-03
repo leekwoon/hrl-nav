@@ -94,7 +94,7 @@ if __name__ == "__main__":
     env = NormalizedBoxEnv(env)
     env = RosEnv(env)
 
-    low_level_agent = torch.load(args.low_level_agent_params)['evaluation/policy']
+    low_level_agent = torch.load(args.low_level_agent_params, map_location=torch.device('cpu'))['evaluation/policy']
     env._wrapped_env.set_low_level_agent(low_level_agent)
 
     params = torch.load(args.high_level_agent_params,
