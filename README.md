@@ -60,10 +60,10 @@ Kyowoon Lee\*<sup>1</sup>(leekwoon@unist.ac.kr), Seongun Kim\*<sup>2</sup>(seong
 ## Reference
 
 ```
-@inproceedings{lee2023hrlnav,
+@article{lee2023adaptive,
   title={Adaptive and Explainable Deployment of Navigation Skills via Hierarchical Deep Reinforcement Learning},
   author={Lee, Kyowoon and Kim, Seongun and Choi, Jaesik},
-  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+  journal={arXiv preprint arXiv:2305.19746},
   year={2023}
 }
 ```
