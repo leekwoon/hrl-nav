@@ -2,7 +2,7 @@
 
 ![example.gif](assets/example.gif)
 
-This repository provides the source codes for our paper "Adaptive and Explainable Deployment of Navigation Skills via Hierarchical Deep Reinforcement Learning" in ICRA 2023.
+This repository provides the source codes for our paper ["Adaptive and Explainable Deployment of Navigation Skills via Hierarchical Deep Reinforcement Learning"](https://arxiv.org/pdf/2305.19746.pdf) in ICRA 2023.
 
 ## Abstract
 
