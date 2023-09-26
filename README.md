@@ -1,4 +1,4 @@
-# hrl-nav
+# Adaptive and Explainable Deployment of Navigation Skills via Hierarchical Deep Reinforcement Learning
 
 ![example.gif](assets/example.gif)
 
