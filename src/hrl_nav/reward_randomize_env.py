@@ -76,6 +76,26 @@ class NavGymRewardRandomizeEnv(gym.Env, utils.EzPickle):
         })
         self.action_space = self._wrapped_env.action_space
 
+    @property
+    def map_info(self):
+        return self._wrapped_env.map_info
+
+    @property
+    def robot(self):
+        return self._wrapped_env.robot
+
+    @property
+    def humans(self):
+        return self._wrapped_env.humans
+
+    @property
+    def num_scan_stack(self):
+        return self._wrapped_env.num_scan_stack
+
+    @property
+    def prev_obs(self):
+        return self._wrapped_env.prev_obs
+
     def _sample_reward_param(self):
         param = dict()
         for key, value in self.reward_param_range.items(): 
